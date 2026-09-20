@@ -29,7 +29,7 @@ body {
 .banner-text {
   display: inline-block;
   padding-left: 150%;
-  animation: scroll-left 17,5s linear infinite;
+  animation: scroll-left 15s linear infinite;
 }
 
 
