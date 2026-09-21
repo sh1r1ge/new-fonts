@@ -1,8 +1,23 @@
 <!doctype html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>newfonts</title>
 <link rel="stylesheet" href="/style.css">
 <h1 id="name"></h1>
 <script>
-  document.getElementById('name').textContent = location.hostname.split('.')[0];
+  const names = [
+    'dinamo','velvetyne','j-ltf','walidbouchouchi','johannesbreyer',
+    'fabianharb','jungmyunglee','designfestival','underbron','beckmans',
+    'foundrylaunch',
+    'buy','d0wnload','copy','design','type','bold','free','handmade',
+    'c0de','feel','zip','m3ta','grotesk','airdrop','share','digit4l',
+    'source','experimental','underground','l1nk','i5sue','enter',
+    'investigate','impactful','equip','licensed','unlicensed','bless',
+    '1ndex','contain','define','leg4l','g3t','trial',
+    'k0nstf4ck','b3rghs','asdfghjkgfjsk','404','1111'
+  ];
+  const sub = location.hostname.split('.')[0];
+  const ok = names.includes(sub);
+  document.title = ok ? location.hostname : 'not found';
+  document.getElementById('name').textContent = ok ? location.hostname : 'not found';
 </script>
