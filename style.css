@@ -49,6 +49,6 @@ body {
 
 @media (orientation: portrait) {
   html {
-    font-size: 190%; /* 1rem = 20px */
+    font-size: 195%; /* 1rem = 20px */
   }
 }
