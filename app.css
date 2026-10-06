@@ -1,0 +1,63 @@
+html {
+  font-size: 100%; /* 1rem = 16px by default, but respects user/browser settings */
+}
+
+@font-face {
+  font-family: 'ABC Monument Grotesk Semi Mono';
+  src: url('ABCMonumentGroteskSemiMono-Regular.woff') format('woff');
+}
+
+body {
+  font-family: 'ABC Monument Grotesk Semi Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.37;
+  margin: 2vh;
+  background: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.ant {
+  height: 9em;
+  width: auto;
+}
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.banner-text {
+  display: inline-block;
+  padding-left: 150%;
+  animation: scroll-left 15s linear infinite;
+}´
+
+.banner-text2 {
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 190%; /* 1rem = 20px */
+  }
+}
